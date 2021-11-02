@@ -1,5 +1,0 @@
-export const ADD_RECIPE = 'ADD_RECIPE';
-export const FETCH_RECIPES = 'FETCH_RECIPES';
-export const ADD_FAVORITE = 'ADD_FAVORITE';
-export const REMOVE_FAVORITE = 'REMOVE_FAVORITE';
-export const FETCH_FAVORITES = 'FETCH_FAVORITES';

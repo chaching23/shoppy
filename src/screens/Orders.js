@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Text,View,StyleSheet,TouchableOpacity,} from 'react-native';
 
-function Profile({ navigation }) {
+function Orders({ navigation }) {
   return (
     <View style={styles.container }>
         <View style={{ flexDirection: 'row' }}>
@@ -9,7 +9,7 @@ function Profile({ navigation }) {
             onPress={() => onPress()}
             style={styles.button}>
             <Text style={{ color: '#fff', fontSize: 20, textAlign: 'center' }}>
-              Profile
+              Orders
             </Text>
           </TouchableOpacity>
         </View>
@@ -17,14 +17,14 @@ function Profile({ navigation }) {
   );
 }
 
-export default Profile;
+export default Orders;
 
 const styles = StyleSheet.create({
   container: {
     flex: 1, 
     padding: 10, 
     width: '100%', 
-    backgroundColor: 'green', 
+    backgroundColor: 'blue', 
     justifyContent:'center'
 
   },

@@ -5,17 +5,18 @@ import AddRecipe from "../../screens/Cart";
 import Profile from "../../screens/Home";
 import { TouchableOpacity, StyleSheet ,Text} from 'react-native';
 import { colors } from "../../theme";
+import Home from '../../screens/Home';
 
 
 const MainStack = createStackNavigator();
 
 
-const  ProfileStack = ({ navigation }) => {
+const  HomeStack = ({ navigation }) => {
     return (
       <MainStack.Navigator>
         <MainStack.Screen
           name="Dumpling"
-          component={Profile}
+          component={Home}
           
           options={{
             headerStyle: {
@@ -53,7 +54,7 @@ const  ProfileStack = ({ navigation }) => {
     );
   }
 
-  export default ProfileStack
+  export default HomeStack
 
   const styles = StyleSheet.create({
     container: {

@@ -7,6 +7,7 @@ import Home from '../../screens/Home';
 import FastImage from 'react-native-fast-image';
 import {colors} from '../../theme';
 
+// initialize stack navigator for home screens
 const MainStack = createStackNavigator();
 
 const HomeStack = ({navigation}) => {

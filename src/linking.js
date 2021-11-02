@@ -17,3 +17,9 @@ const linking = {
 };
 
 export default linking;
+
+// To test in terminal:
+// ex: npx uri-scheme open demo://shoppy/referrals --ios
+
+// To test in moobile safari:
+// ex: demo://shoppy/home

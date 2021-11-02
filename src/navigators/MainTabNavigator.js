@@ -8,14 +8,12 @@ import HomeStack from './Stacks/HomeStack';
 import FastImage from 'react-native-fast-image';
 import {colors} from '../theme';
 
+// initialize bottom tab navigator for app
 const Tab = createBottomTabNavigator();
 
 const MainTabNavigator = () => {
   return (
-    <Tab.Navigator
-      screenOptions={{
-        tabBarActiveTintColor: 'red',
-      }}>
+    <Tab.Navigator>
       <Tab.Screen
         name="Home"
         component={HomeStack}

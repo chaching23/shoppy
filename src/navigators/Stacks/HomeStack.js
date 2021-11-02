@@ -17,10 +17,6 @@ const HomeStack = ({navigation}) => {
         name="Dumpling"
         component={Home}
         options={{
-          headerTitleStyle: {
-            // backgroundColor: colors.primary,
-            color: 'red',
-          },
           headerRight: () => (
             <TouchableOpacity
               onPress={() => navigation.navigate('Cart')}

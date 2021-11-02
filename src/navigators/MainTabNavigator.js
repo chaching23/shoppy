@@ -51,7 +51,7 @@ const MainTabNavigator = () => {
         }}
       />
       <Tab.Screen
-        name="Referral"
+        name="Referrals"
         component={Referrals}
         options={{
           tabBarLabel: 'Referrals',

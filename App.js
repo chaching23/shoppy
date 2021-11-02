@@ -15,14 +15,8 @@ import linking from './src/linking.js';
 const App = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
-      {/* <Text>{data? JSON.stringify(data) : "App notopen from link"}</Text> */}
       <NavigationContainer linking={linking}>
         <MainTabNavigator />
-        {/* <RootStack.Navigator screenOptions={{
-           headerShown: false
-         }}>
-         <RootStack.Screen name="MainTab" component={MainTabNavigator} />
-         </RootStack.Navigator> */}
       </NavigationContainer>
     </SafeAreaView>
   );

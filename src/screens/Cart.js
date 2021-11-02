@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import {Text,View,StyleSheet,TouchableOpacity,} from 'react-native';
 
-function Cart({ navigation }) {
+function Cart() {
   return (
     <View style={styles.container }>
         <View style={{ flexDirection: 'row' }}>

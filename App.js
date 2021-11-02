@@ -6,33 +6,24 @@
  * @flow strict-local
  */
 
-import React, { useEffect, useState } from 'react';
-import {
-  SafeAreaView,
-  ScrollView,
-  Text,
-  StyleSheet,
-} from 'react-native';
-import { NavigationContainer } from "@react-navigation/native";
-import MainTabNavigator from "./src/navigators/MainTabNavigator.js";
+import React, {useEffect, useState} from 'react';
+import {SafeAreaView, ScrollView, Text, StyleSheet} from 'react-native';
+import {NavigationContainer} from '@react-navigation/native';
+import MainTabNavigator from './src/navigators/MainTabNavigator.js';
 import linking from './src/linking.js';
 
-const App  = () => {
-
+const App = () => {
   return (
     <SafeAreaView style={{flex: 1}}>
       {/* <Text>{data? JSON.stringify(data) : "App notopen from link"}</Text> */}
-        <NavigationContainer linking={linking}>
-         
-          <MainTabNavigator  />
-         {/* <RootStack.Navigator screenOptions={{
+      <NavigationContainer linking={linking}>
+        <MainTabNavigator />
+        {/* <RootStack.Navigator screenOptions={{
            headerShown: false
          }}>
          <RootStack.Screen name="MainTab" component={MainTabNavigator} />
          </RootStack.Navigator> */}
-        </NavigationContainer>
-    
-
+      </NavigationContainer>
     </SafeAreaView>
   );
 };

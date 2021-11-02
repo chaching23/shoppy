@@ -1,13 +1,13 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Text, View, StyleSheet, TouchableOpacity} from 'react-native';
 
-function Profile({navigation}) {
+function Referrals({navigation}) {
   return (
     <View style={styles.container}>
       <View style={{flexDirection: 'row'}}>
         <TouchableOpacity onPress={() => onPress()} style={styles.button}>
           <Text style={{color: '#fff', fontSize: 20, textAlign: 'center'}}>
-            Profile
+            Referrals
           </Text>
         </TouchableOpacity>
       </View>
@@ -15,7 +15,7 @@ function Profile({navigation}) {
   );
 }
 
-export default Profile;
+export default Referrals;
 
 const styles = StyleSheet.create({
   container: {

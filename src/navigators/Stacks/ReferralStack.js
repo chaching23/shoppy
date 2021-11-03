@@ -3,20 +3,19 @@ import {createStackNavigator, TransitionPresets} from '@react-navigation/stack';
 import Profile from '../../screens/Profile';
 import Cart from '../../screens/Cart';
 import {TouchableOpacity, StyleSheet, Text} from 'react-native';
-import Home from '../../screens/Home';
+import Referrals from '../../screens/Referrals';
 import FastImage from 'react-native-fast-image';
 
 // initialize stack navigator for home screens
 const MainStack = createStackNavigator();
 
-const HomeStack = ({navigation}) => {
+const ReferralStack = ({navigation}) => {
   return (
     <MainStack.Navigator
       screenOptions={{...TransitionPresets.ModalSlideFromBottomIOS}}>
       <MainStack.Screen
         name="Dumpling"
-        component={Home}
-        headerS={(color = 'red')}
+        component={Referrals}
         options={{
           headerRight: () => (
             <TouchableOpacity
@@ -24,7 +23,7 @@ const HomeStack = ({navigation}) => {
               style={styles.rightIcon}>
               <FastImage
                 style={styles.roundImageProfile}
-                source={require('../../assests/images/plus.png')}
+                source={require('../../assests/images/menu.png')}
               />
             </TouchableOpacity>
           ),
@@ -34,7 +33,7 @@ const HomeStack = ({navigation}) => {
               style={styles.leftIcon}>
               <FastImage
                 style={styles.roundImageProfile}
-                source={require('../../assests/images/menu.png')}
+                source={require('../../assests/images/plus.png')}
               />
             </TouchableOpacity>
           ),
@@ -46,7 +45,7 @@ const HomeStack = ({navigation}) => {
   );
 };
 
-export default HomeStack;
+export default ReferralStack;
 
 const styles = StyleSheet.create({
   container: {

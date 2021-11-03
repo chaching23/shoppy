@@ -1,10 +1,11 @@
 import React from 'react';
 import {createBottomTabNavigator} from '@react-navigation/bottom-tabs';
 import {StyleSheet} from 'react-native';
-import PickUp from '../screens/PickUp';
-import Referrals from '../screens/Referrals';
-import Orders from '../screens/Orders';
 import HomeStack from './Stacks/HomeStack';
+import PickUpStack from './Stacks/PickUpStack';
+import OrderStack from './Stacks/OrderStack';
+import ReferralStack from './Stacks/ReferralStack';
+
 import FastImage from 'react-native-fast-image';
 import {colors} from '../theme';
 
@@ -33,7 +34,7 @@ const MainTabNavigator = () => {
       />
       <Tab.Screen
         name="PickUp"
-        component={PickUp}
+        component={PickUpStack}
         options={{
           tabBarLabel: 'PickUp',
           tabBarIcon: ({focused}) => (
@@ -50,7 +51,7 @@ const MainTabNavigator = () => {
       />
       <Tab.Screen
         name="Referrals"
-        component={Referrals}
+        component={ReferralStack}
         options={{
           tabBarLabel: 'Referrals',
           tabBarIcon: ({focused}) => (
@@ -68,7 +69,7 @@ const MainTabNavigator = () => {
 
       <Tab.Screen
         name="Orders"
-        component={Orders}
+        component={OrderStack}
         options={{
           tabBarLabel: 'Orders',
           tabBarIcon: ({focused}) => (
